@@ -16,7 +16,9 @@ Rによるデータ可視化と地図表現
 
 ```r
 packages <- c(
- "tidyverse", "sf", "mapview", "zipangu", "tabularmaps", "geofacet")
+ "tidyverse", "sf", "mapview", "zipangu", "tabularmaps", "geofacet",
+ "ggtext", "ggrepel", "gghighlight", "biscale", "patchwork",
+ "cartogram", "tmap")
  
 install.packages(setdiff(packages, rownames(installed.packages())))
 
