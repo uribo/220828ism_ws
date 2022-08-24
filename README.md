@@ -17,13 +17,18 @@ Rによるデータ可視化と地図表現
 ```r
 packages <- c(
  "tidyverse", "sf", "mapview", "zipangu", "tabularmaps", "geofacet",
+ "palmerpenguins", "datasauRus", "gt",
  "ggtext", "ggrepel", "gghighlight", "biscale", "patchwork",
- "cartogram", "tmap")
- 
+ "cartogram", "tmap", "rnaturalearth", "units")
 install.packages(setdiff(packages, rownames(installed.packages())))
 
-uris_packages <- c(
+ropensci_pkgs <- c(
+  "rnaturalearthhires")
+install.packages(setdiff(ropensci_pkgs, rownames(installed.packages())), 
+                 repos = "https://ropensci.r-universe.dev")
+
+uris_pkgs <- c(
   "jmastats", "ssdse", "suryulib")
-install.packages(setdiff(uris_packages, rownames(installed.packages())), 
+install.packages(setdiff(uris_pkgs, rownames(installed.packages())), 
                  repos = "https://uribo.r-universe.dev")
 ```
