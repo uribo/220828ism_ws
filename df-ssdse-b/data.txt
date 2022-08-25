@@ -1,0 +1,17 @@
+path:
+- data.csv
+- data.rds
+type: table
+description: SSDSE(教育用標準データセット)を一部加工したもの
+rows: 564
+cols: 6
+columns:
+  prefecture: character
+  year: integer
+  population: numeric
+  temperature: numeric
+  precipitation: numeric
+  spending: numeric
+filenames:
+  data.csv: data.csv
+  data.rds: data.rds

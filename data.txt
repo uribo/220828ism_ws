@@ -1,0 +1,6 @@
+- path: df-ssdse-b
+  name: df-ssdse-b
+  type: table
+  description: SSDSE(教育用標準データセット)を一部加工したもの
+  rows: 564
+  cols: 6
