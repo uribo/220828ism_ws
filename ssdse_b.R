@@ -1,5 +1,6 @@
+# install.packages("ssdse", repos = "https://uribo.r-universe.dev")
 df_ssdse_b <-
-  ssdse::read_ssdse_b("~/Documents/resources/統計センター/SSDSE/SSDSE-B-2022.csv",
+  ssdse::read_ssdse_b("https://www.nstac.go.jp/sys/files//SSDSE-B-2022.csv",
                     lang = "ja",
                     pack = TRUE) |>
   dplyr::select(prefecture = `都道府県`,
