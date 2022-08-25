@@ -17,7 +17,7 @@ Rによるデータ可視化と地図表現
 ```r
 packages <- c(
  "tidyverse", "sf", "mapview", "zipangu", "tabularmaps", "geofacet",
- "palmerpenguins", "datasauRus", "gt",
+ "palmerpenguins", "datasauRus", "gt", "gapminder", "statebins",
  "ggtext", "ggrepel", "gghighlight", "biscale", "patchwork",
  "cartogram", "tmap", "rnaturalearth", "units")
 install.packages(setdiff(packages, rownames(installed.packages())))
@@ -26,6 +26,11 @@ ropensci_pkgs <- c(
   "rnaturalearthhires")
 install.packages(setdiff(ropensci_pkgs, rownames(installed.packages())), 
                  repos = "https://ropensci.r-universe.dev")
+
+wilkelab_pkgs <- c(
+  "gridtext")
+install.packages(setdiff(wilkelab_pkgs, rownames(installed.packages())), 
+                 repos = "https://wilkelab.r-universe.dev")
 
 uris_pkgs <- c(
   "jmastats", "ssdse", "suryulib")
