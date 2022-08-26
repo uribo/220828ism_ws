@@ -4,14 +4,15 @@ path:
 type: table
 description: SSDSE(教育用標準データセット)を一部加工したもの
 rows: 564
-cols: 6
+cols: 7
 columns:
   prefecture: character
   year: integer
   population: numeric
-  temperature: numeric
-  precipitation: numeric
+  birth_male: numeric
+  birth_female: numeric
   spending: numeric
+  food_expenses: numeric
 filenames:
   data.csv: data.csv
   data.rds: data.rds
