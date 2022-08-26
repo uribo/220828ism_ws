@@ -9,10 +9,14 @@ df_ssdse_b <-
          `自然環境`,
          `家計`) |>
   tidyr::unnest(everything()) |>
-  dplyr::select(prefecture, year, population = `総人口`,
-                temperature = `年平均気温`,
-                precipitation = `降水量（年間）`,
-                spending = `消費支出（二人以上の世帯）`)
+  dplyr::select(prefecture, year,
+                population = `総人口`,
+                birth_male = `出生数（男）`,
+                birth_female = `出生数（女）`,
+                # temperature = `年平均気温`,
+                # precipitation = `降水量（年間）`,
+                spending = `消費支出（二人以上の世帯）`,
+                food_expenses = `食料費（二人以上の世帯）`)
 
 # pins::board_register_github(repo = "uribo/220828ism_ws")
 # pins::pin(df_ssdse_b, description = "SSDSE(教育用標準データセット)を一部加工したもの", board = "github")
